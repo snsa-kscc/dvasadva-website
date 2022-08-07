@@ -42,7 +42,7 @@ const Footer = () => (
           <Image alt="dvasadva d.o.o." src="/2s2.jpg" width={88} height={50} />
           <span className="ml-3 text-xl">dvasadva d.o.o.</span>
         </a>
-        <p className="mt-2 text-sm text-gray-500">Motion graphics agency harnesing power of deep neural networks.</p>
+        <p className="mt-2 text-sm text-gray-500">Motion graphics agency which harneses power of deep neural networks.</p>
       </div>
     </div>
     <div className="bg-gray-200">
