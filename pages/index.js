@@ -89,13 +89,13 @@ export default function IndexPage({ isFirstMount }) {
       {isFirstMount && <InitialTransition />}
 
       <motion.div initial="initial" animate="animate" variants={content(isFirstMount)} className="space-y-12">
-        <motion.h1 variants={title} className="text-6xl font-black py-32 text-center">
+        <motion.h1 variants={title} className="text-5xl font-black py-24 m-8 text-center">
           Dvasadva is a business which makes rich digital experiences.
         </motion.h1>
-        <motion.h1 variants={title} className="text-6xl font-black py-32 text-center">
+        <motion.h1 variants={title} className="text-5xl font-black py-24 m-8 text-center">
           At the moment this site is work in progress.
         </motion.h1>
-        <motion.h1 variants={title} className="text-3xl font-black text-center">
+        <motion.h1 variants={title} className="text-3xl m-8 font-black text-center">
           Expect more soon. In the meantime, check out some of our work.
         </motion.h1>
         <motion.section variants={items} className="text-gray-700 body-font">
