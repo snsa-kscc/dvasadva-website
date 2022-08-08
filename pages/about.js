@@ -47,13 +47,13 @@ const ContactPage = () => {
           </p>
           <p className="mx-auto my-3 text-base leading-relaxed lg:w-2/3">
             Let's be honest, by now I've already lost 95% of you and to be really honest I would have lost most of you anyway no matter what I write, so in a
-            manner of good scientist I'm gonna propose a hypothesis which goes something like this:
+            manner of a good scientist I'm gonna propose a hypothesis which goes something like this:
           </p>
           <p className="mx-auto my-3 text-base leading-relaxed lg:w-2/3">
             <i>In order to be concise, one has to employ certain level of abstraction.</i>
           </p>
           <p className="mx-auto my-3 text-base leading-relaxed lg:w-2/3">
-            Outlandish? Of course not. But, allow me to explain. Look, we are here in a software development business, so nothing here is a rocket science. We
+            Outlandish? Of course not. But, allow me to explain. Look, we are here in a software development business, so nothing here is rocket science. We
             build web apps and web sites, period. You know, apps, these things you interact through your screen with. Or sites, these things you look at, again
             with the agency of your screen. And I expect you to have certain expectations. At least I have. It has to be fast, it has to get the job done. It
             has to be different, but not too different. It has to be perhaps <i>beautiful?</i> Your stakeholders have to be satisfied with the solution, heck,
