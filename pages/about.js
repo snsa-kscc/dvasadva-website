@@ -69,9 +69,9 @@ const ContactPage = () => {
             going to propose technologies built upon Node.js stack utilizing Jamstack approach and leveraging microservice architecture. Consequently, you are
             going to get fast page loads, better SEO, seamless scalability and constant possibility of portability and I am going to have great developer
             experience across my team. Let's not forget I have to juggle between the role of an engineer and the manager role. And even though I enjoy af to
-            nerd out and try new technologies instantly as they become available not in a single moment am I losing sight from the big picture and I always know
-            which role is unfortunately more important. All of this in order to make solutions which are better, <i>richer</i> and the journey while using it is
-            pleasant. You know, nice <i>vibe and experience</i>. Right? All of this is an aesthetic in itself.
+            nerd out and try new technologies instantly as they become available, not in a single moment am I losing sight from the big picture and I always
+            know which role is unfortunately more important. All of this in order to make solutions which are better, <i>richer</i> and the journey while using
+            it is pleasant. You know, nice <i>vibe and experience</i>. Right? All of this is an aesthetic in itself.
           </p>
           <p className="mx-auto my-3 text-base leading-relaxed lg:w-2/3">
             However, all of this is nice but we must not get complacent. So after some time maybe I'm going to propose to level up. To utilize power of natural
