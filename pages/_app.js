@@ -1,12 +1,12 @@
 import { AnimatePresence } from "framer-motion";
-import React from "react";
+import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps, router }) {
-  const [isFirstMount, setIsFirstMount] = React.useState(true);
+  const [isFirstMount, setIsFirstMount] = useState(true);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const handleRouteChange = () => {
       isFirstMount && setIsFirstMount(false);
     };

@@ -1,6 +1,7 @@
-import React from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Hero from "../components/Hero";
 
 const prtfolioDb = [
   {
@@ -87,7 +88,9 @@ export default function IndexPage({ isFirstMount }) {
   return (
     <motion.section exit={{ opacity: 0 }}>
       {isFirstMount && <InitialTransition />}
-
+      <div className="h-60vh">
+        <Hero />
+      </div>
       <motion.div initial="initial" animate="animate" variants={content(isFirstMount)} className="space-y-12">
         <motion.h1 variants={title} className="text-5xl font-black py-24 m-8 text-center">
           Dvasadva is a business which makes rich digital experiences.
@@ -166,7 +169,7 @@ const text = {
 };
 
 const InitialTransition = () => {
-  React.useState(() => {
+  useState(() => {
     typeof windows !== "undefined" && window.scrollTo(0, 0);
   }, []);
 
