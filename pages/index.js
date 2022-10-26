@@ -95,18 +95,18 @@ export default function IndexPage({ isFirstMount }) {
         <motion.h1 variants={title} className="text-5xl font-black py-24 m-8 text-center">
           Dvasadva is a business which makes rich digital experiences.
         </motion.h1>
-        <motion.h1 variants={title} className="text-5xl font-black py-24 m-8 text-center">
-          At the moment this site is work in progress.
-        </motion.h1>
-        <motion.h1 variants={title} className="text-3xl m-8 font-black text-center">
-          Expect more soon. In the meantime, check out some of our work.
+        <motion.h1 variants={title} className="w-full text-3xl font-bold text-center sm:text-4xl md:text-5xl py-14">
+          Selected works
         </motion.h1>
         <motion.section variants={items} className="text-gray-700 body-font">
           <div className="container px-5 pt-12 mx-auto">
-            <div className="flex flex-wrap -m-4">
-              {prtfolioDb.map((item, index) => (
-                <Item key={index} {...item} />
-              ))}
+            <div className="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
+              {prtfolioDb.map((item, index) => {
+                if (index % 2 !== 0) {
+                  return <OddItem key={index} {...item} />;
+                }
+                return <EvenItem key={index} {...item} />;
+              })}
             </div>
           </div>
         </motion.section>
@@ -115,14 +115,30 @@ export default function IndexPage({ isFirstMount }) {
   );
 }
 
-const Item = ({ img, category, name, url }) => (
-  <div className="w-full p-4 lg:w-1/4 md:w-1/2">
-    <a href={url} className="relative block h-48 overflow-hidden rounded border">
-      <Image alt="item" className="block object-cover object-center w-full h-full" src={img} layout="fill" />
-    </a>
-    <div className="mt-4">
-      <h3 className="mb-1 text-xs tracking-widest text-gray-500 title-font">{category}</h3>
-      <h2 className="text-lg font-medium text-gray-900 title-font">{name} </h2>
+const OddItem = ({ img, category, name, url }) => (
+  <div className="flex flex-col mb-8 sm:flex-row py-10">
+    <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12">
+      <a href={url} className="relative block overflow-hidden rounded shadow-xl h-auto w-full">
+        <Image alt="item" className="block object-cover object-center" src={img} width={885} height={500} />
+      </a>
+    </div>
+    <div className="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-20">
+      <h3 className="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">{category}</h3>
+      <h2 className="mt-2 text-2xl sm:text-left md:text-4xl">{name} </h2>
+    </div>
+  </div>
+);
+
+const EvenItem = ({ img, category, name, url }) => (
+  <div className="flex flex-col mb-8 sm:flex-row py-10">
+    <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
+      <a href={url} className="relative block overflow-hidden rounded shadow-xl h-auto w-full">
+        <Image alt="item" className="block object-cover object-center" src={img} width={885} height={500} />
+      </a>
+    </div>
+    <div className="flex flex-col justify-center items-end mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-20">
+      <h3 className="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">{category}</h3>
+      <h2 className="mt-2 text-2xl sm:text-left md:text-4xl">{name} </h2>
     </div>
   </div>
 );
