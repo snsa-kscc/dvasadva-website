@@ -98,7 +98,7 @@ export default function IndexPage({ isFirstMount }) {
         <motion.h1 variants={title} className="w-full text-3xl font-bold text-center sm:text-4xl md:text-5xl py-14">
           Selected works
         </motion.h1>
-        <motion.section variants={items} className="text-gray-700 body-font">
+        <motion.section variants={items} className="bg-indigo-50 text-gray-700 body-font">
           <div className="container px-5 pt-12 mx-auto">
             <div className="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
               {prtfolioDb.map((item, index) => {
