@@ -47,7 +47,7 @@ const Footer = () => (
     </div>
     <div className="bg-gray-200">
       <div className="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row">
-        <p className="text-sm text-center text-gray-500 sm:text-left">© 2022 dvasadva d.o.o.</p>
+        <p className="text-sm text-center text-gray-500 sm:text-left">© 2023 dvasadva d.o.o.</p>
         <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
           <a href="https://linkedin.com/company/dvasadva" className="ml-3 text-gray-500">
             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0" className="w-5 h-5" viewBox="0 0 24 24">
