@@ -38,7 +38,7 @@ const ContactPage = () => {
           <h1 className="mb-4 text-2xl font-medium text-gray-900 sm:text-3xl title-font text-center">About Us</h1>
           <p className="mx-auto my-3 text-base leading-relaxed lg:w-2/3">
             Ok, we all know how it goes. You land on a website of some random business on the Internet run by some random gals and guys and immediately you are
-            slapped by fancy marketing gibberish buzz words such as <i>experiences, rich & digital</i> and of course given the fact we live in 2022
+            slapped by fancy marketing gibberish buzz words such as <i>experiences, rich & digital</i> and of course given the fact we live in 2023
             <i> machine learning & blazingly fast</i> has to be involved, right?
           </p>
           <p className="mx-auto my-3 text-base leading-relaxed lg:w-2/3">
