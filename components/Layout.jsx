@@ -18,14 +18,14 @@ const Header = () => {
   return (
     <header className="text-gray-700 body-font">
       <div className="container flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row">
-        <Link href="/">
+        <Link href="/" legacyBehavior>
           <a className="flex items-center mb-4 font-medium text-gray-900 title-font md:mb-0">
             <Image alt="dvasadva d.o.o." src="/2s2.jpg" width={177} height={100} />
             <span className="ml-3 text-xl">dvasadva</span>
           </a>
         </Link>
         <nav className="flex flex-wrap items-center justify-center space-x-4 text-base md:ml-auto">
-          <Link href="/about">
+          <Link href="/about" legacyBehavior>
             <a className={asPath === "/about" ? "font-black text-black" : "hover:text-gray-900"}>About Us</a>
           </Link>
         </nav>
