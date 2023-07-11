@@ -5,6 +5,7 @@ import Image from "next/image";
 const Layout = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
+      <div className="text-center text-xl font-bold bg-slate-800 text-zinc-50 p-4">Expect new website soon!</div>
       <Header />
       <main className="flex-1">{children}</main>
       <Footer />

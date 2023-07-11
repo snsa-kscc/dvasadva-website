@@ -5,6 +5,12 @@ import Hero from "../components/Hero";
 
 const prtfolioDb = [
   {
+    name: "Croatian Screenwriters & Playwrights Guild",
+    category: "ARTISTS GUILD",
+    img: "/spid.jpg",
+    url: "https://spid.com.hr",
+  },
+  {
     name: "Infodesign",
     category: "SOFTWARE COMPANY",
     img: "/infodesign.jpg",
@@ -124,7 +130,7 @@ const OddItem = ({ img, category, name, url }) => (
     </div>
     <div className="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-20">
       <h3 className="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">{category}</h3>
-      <h2 className="mt-2 text-2xl sm:text-left md:text-4xl">{name} </h2>
+      <h2 className="mt-2 text-2xl sm:text-left md:text-4xl">{name}</h2>
     </div>
   </div>
 );
@@ -138,7 +144,7 @@ const EvenItem = ({ img, category, name, url }) => (
     </div>
     <div className="flex flex-col justify-center items-end mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-20">
       <h3 className="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">{category}</h3>
-      <h2 className="mt-2 text-2xl sm:text-left md:text-4xl">{name} </h2>
+      <h2 className="mt-2 text-2xl text-right md:text-4xl">{name}</h2>
     </div>
   </div>
 );
