@@ -32,10 +32,10 @@ const inputs = {
 
 const ContactPage = () => {
   return (
-    <motion.section exit={{ opacity: 0 }} className="relative text-gray-700 body-font">
+    <motion.section exit={{ opacity: 0 }} className="relative body-font bg-stone-900">
       <motion.div variants={content} animate="animate" initial="initial" className="container px-5 py-24 mx-auto">
-        <motion.div variants={title} className="flex flex-col w-full mb-12">
-          <h1 className="mb-4 text-2xl font-medium text-gray-900 sm:text-3xl title-font text-center">About Us</h1>
+        <motion.div variants={title} className="flex flex-col w-full mb-12 text-zinc-300">
+          <h1 className="mb-4 text-2xl font-medium text-zinc-50 sm:text-3xl title-font text-center">About Us</h1>
           <p className="mx-auto my-3 text-base leading-relaxed lg:w-2/3">
             Ok, we all know how it goes. You land on a website of some random business on the Internet run by some random gals and guys and immediately you are
             slapped by fancy marketing gibberish buzz words such as <i>experiences, rich & digital</i> and of course given the fact we live in 2023
@@ -87,7 +87,7 @@ const ContactPage = () => {
           <p className="mx-auto my-3 text-base leading-relaxed lg:w-2/3">Siniša Košćec</p>
           <p className="mx-auto my-3 text-base leading-relaxed lg:w-2/3">Founder and CEO</p>
         </motion.div>
-        <motion.div variants={inputs} className="mx-auto lg:w-1/2 md:w-2/3">
+        <motion.div variants={inputs} className="mx-auto lg:w-1/2 md:w-2/3 text-zinc-500">
           <div className="flex flex-wrap -m-2">
             <div className="w-full p-2 pt-8 mt-8 text-center border-t border-gray-200">
               <a className="text-red-500">office@dvasadva.com</a>
