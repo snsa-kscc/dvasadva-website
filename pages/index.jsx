@@ -192,7 +192,7 @@ const text = {
 
 const InitialTransition = () => {
   useState(() => {
-    typeof windows !== "undefined" && window.scrollTo(0, 0);
+    typeof window !== "undefined" && window.scrollTo(0, 0);
   }, []);
 
   return (
