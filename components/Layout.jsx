@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import Image from "next/image";
 
 const Layout = ({ children }) => {
@@ -14,7 +13,6 @@ const Layout = ({ children }) => {
 };
 
 const Header = () => {
-  const { asPath } = useRouter();
 
   return (
     <header className="text-zinc-50 bg-stone-800 body-font">
@@ -22,7 +20,6 @@ const Header = () => {
         <Link href="/" legacyBehavior>
           <a className="flex items-center mb-4 font-medium title-font md:mb-0">
             <Image alt="dvasadva d.o.o." src="/2s2.png" width={177} height={100} />
-            <span className="ml-3 text-xl">dvasadva</span>
           </a>
         </Link>
         <nav className="flex flex-wrap items-center justify-center space-x-4 text-base md:ml-auto">
