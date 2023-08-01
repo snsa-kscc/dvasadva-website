@@ -24,7 +24,7 @@ const prtfolioDb = [
     url: "https://144.hr",
   },
   {
-    name: "Jasaragić, Mamut and Stojan",
+    name: "Jašaragić, Mamut and Stojan",
     category: "LAW FIRM",
     img: "/jms.jpg",
     url: "https://jms.hr",
@@ -93,21 +93,20 @@ const items = {
 
 const spaceMono700 = Space_Mono({
   subsets: ["latin"],
-  weight: '700',
-})
+  weight: "700",
+});
 
 const spaceMono400 = Space_Mono({
   subsets: ["latin"],
-  weight: '400',
-})
+  weight: "400",
+});
 
 export default function IndexPage({ isFirstMount }) {
-
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ['start 75vh', 'end 20vh']
+    offset: ["start 75vh", "end 20vh"],
   });
 
   return (
@@ -116,14 +115,30 @@ export default function IndexPage({ isFirstMount }) {
       <div className="h-60vh">
         <Hero />
       </div>
-      <motion.div initial="initial" animate="animate" variants={content(isFirstMount)} className="space-y-12 bg-stone-800 text-zinc-50">
-        <motion.h1 variants={title} className={`text-5xl lg:text-7xl xl:text-9xl py-24 m-8 text-center ${spaceMono700.className}`}>
+      <motion.div
+        initial="initial"
+        animate="animate"
+        variants={content(isFirstMount)}
+        className="space-y-12 bg-stone-800 text-zinc-50"
+      >
+        <motion.h1
+          variants={title}
+          className={`text-5xl lg:text-7xl xl:text-9xl py-24 m-8 text-center ${spaceMono700.className}`}
+        >
           We craft custom made software that engages
         </motion.h1>
-        <motion.h1 variants={title} ref={ref} style={{ opacity: scrollYProgress }} className={`w-full text-3xl text-right lg:text-5xl p-8 lg:p-24 ${spaceMono400.className}`}>
+        <motion.h1
+          variants={title}
+          ref={ref}
+          style={{ opacity: scrollYProgress }}
+          className={`w-full text-3xl text-right lg:text-5xl p-8 lg:p-24 ${spaceMono400.className}`}
+        >
           Selected works
         </motion.h1>
-        <motion.section variants={items} className="bg-stone-900 text-zinc-100 body-font">
+        <motion.section
+          variants={items}
+          className="bg-stone-900 text-zinc-100 body-font"
+        >
           <div className="container px-5 pt-12 mx-auto">
             <div className="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
               {prtfolioDb.map((item, index) => {
@@ -143,13 +158,28 @@ export default function IndexPage({ isFirstMount }) {
 const OddItem = ({ img, category, name, url }) => (
   <div className="flex flex-col mb-8 sm:flex-row py-10">
     <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12">
-      <a href={url} className="relative block overflow-hidden rounded shadow-slate-700 shadow-lg h-auto w-full">
-        <Image alt="item" className="block object-cover object-center" src={img} width={885} height={500} />
+      <a
+        href={url}
+        className="relative block overflow-hidden rounded shadow-slate-700 shadow-lg h-auto w-full"
+      >
+        <Image
+          alt="item"
+          className="block object-cover object-center"
+          src={img}
+          width={885}
+          height={500}
+        />
       </a>
     </div>
     <div className="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-20">
-      <h3 className="mb-2 text-sm font-semibold leading-none text-left text-cyan-400 uppercase">{category}</h3>
-      <h2 className={`mt-2 text-2xl sm:text-left md:text-4xl ${spaceMono400.className}`}>{name}</h2>
+      <h3 className="mb-2 text-sm font-semibold leading-none text-left text-cyan-400 uppercase">
+        {category}
+      </h3>
+      <h2
+        className={`mt-2 text-2xl sm:text-left md:text-4xl ${spaceMono400.className}`}
+      >
+        {name}
+      </h2>
     </div>
   </div>
 );
@@ -157,13 +187,28 @@ const OddItem = ({ img, category, name, url }) => (
 const EvenItem = ({ img, category, name, url }) => (
   <div className="flex flex-col mb-8 sm:flex-row py-10">
     <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
-      <a href={url} className="relative block overflow-hidden rounded shadow-slate-700 shadow-lg h-auto w-full">
-        <Image alt="item" className="block object-cover object-center" src={img} width={885} height={500} />
+      <a
+        href={url}
+        className="relative block overflow-hidden rounded shadow-slate-700 shadow-lg h-auto w-full"
+      >
+        <Image
+          alt="item"
+          className="block object-cover object-center"
+          src={img}
+          width={885}
+          height={500}
+        />
       </a>
     </div>
     <div className="flex flex-col justify-center items-end mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-20">
-      <h3 className="mb-2 text-sm font-semibold leading-none text-left text-cyan-400 uppercase">{category}</h3>
-      <h2 className={`mt-2 text-2xl text-right md:text-4xl ${spaceMono400.className}`}>{name}</h2>
+      <h3 className="mb-2 text-sm font-semibold leading-none text-left text-cyan-400 uppercase">
+        {category}
+      </h3>
+      <h2
+        className={`mt-2 text-2xl text-right md:text-4xl ${spaceMono400.className}`}
+      >
+        {name}
+      </h2>
     </div>
   </div>
 );
@@ -221,14 +266,31 @@ const InitialTransition = () => {
       animate="animate"
       variants={blackBox}
       onAnimationStart={() => document.body.classList.add("overflow-hidden")}
-      onAnimationComplete={() => document.body.classList.remove("overflow-hidden")}
+      onAnimationComplete={() =>
+        document.body.classList.remove("overflow-hidden")
+      }
     >
       <motion.svg variants={textContainer} className="absolute z-50 flex">
-        <pattern id="pattern" patternUnits="userSpaceOnUse" width={750} height={800} className="text-white">
+        <pattern
+          id="pattern"
+          patternUnits="userSpaceOnUse"
+          width={750}
+          height={800}
+          className="text-white"
+        >
           <rect className="w-full h-full fill-current" />
-          <motion.rect variants={text} className="w-full h-full text-stone-600 fill-current" />
+          <motion.rect
+            variants={text}
+            className="w-full h-full text-stone-600 fill-current"
+          />
         </pattern>
-        <text className="text-4xl font-bold" textAnchor="middle" x="50%" y="50%" style={{ fill: "url(#pattern)" }}>
+        <text
+          className="text-4xl font-bold"
+          textAnchor="middle"
+          x="50%"
+          y="50%"
+          style={{ fill: "url(#pattern)" }}
+        >
           dvasadva
         </text>
       </motion.svg>
