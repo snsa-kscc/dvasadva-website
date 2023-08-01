@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
       <Head>
         <title>dvasadva</title>
       </Head>
-      <div className="text-center text-xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-zinc-50 p-4">Expect new website soon!</div>
+      <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-zinc-50 h-10"></div>
       <Header />
       <main className="flex-1 bg-stone-800">{children}</main>
       <Footer />
