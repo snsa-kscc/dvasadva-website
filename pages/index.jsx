@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Hero from "../components/Hero";
+import { Space_Mono } from "next/font/google";
 
 const prtfolioDb = [
   {
@@ -90,6 +91,11 @@ const items = {
   },
 };
 
+const spaceMono = Space_Mono({
+  subsets: ["latin"],
+  weight: '700',
+})
+
 export default function IndexPage({ isFirstMount }) {
   return (
     <motion.section exit={{ opacity: 0 }} className="bg-stone-800">
@@ -98,8 +104,8 @@ export default function IndexPage({ isFirstMount }) {
         <Hero />
       </div>
       <motion.div initial="initial" animate="animate" variants={content(isFirstMount)} className="space-y-12 bg-stone-800 text-zinc-50">
-        <motion.h1 variants={title} className="text-5xl font-black py-24 m-8 text-center">
-          We create rich digital experiences
+        <motion.h1 variants={title} className={`text-5xl lg:text-7xl xl:text-9xl py-24 m-8 text-center ${spaceMono.className}`}>
+          We craft custom made software that engages
         </motion.h1>
         <motion.h1 variants={title} className="w-full text-2xl font-bold text-center sm:text-3xl md:text-4xl py-14">
           Selected works
@@ -117,7 +123,7 @@ export default function IndexPage({ isFirstMount }) {
           </div>
         </motion.section>
       </motion.div>
-    </motion.section>
+    </motion.section >
   );
 }
 

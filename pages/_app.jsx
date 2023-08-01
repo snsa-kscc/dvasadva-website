@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps, router }) {
 
   return (
     <Layout>
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence mode="wait">
         <Component isFirstMount={isFirstMount} key={router.route} {...pageProps} />
       </AnimatePresence>
     </Layout>
