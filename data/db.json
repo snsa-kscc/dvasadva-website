@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Croatian Screenwriters & Playwrights Guild",
+    "category": "ARTISTS GUILD",
+    "img": "/spid.jpg",
+    "url": "https://spid.com.hr",
+    "description": "The challenge was to design and build an elegant informational website. Our solution was to use Next.js as the frontend and storyblok CMS as the headless backend in order to serve a clean and simple information architecture."
+  },
+  {
+    "name": "Infodesign",
+    "category": "SOFTWARE COMPANY",
+    "img": "/infodesign.jpg",
+    "url": "https://infodesign.hr",
+    "description": "The challenge was to showcase services and expertise of the business. Our solution was to use Progress Sitefinity CMS and a custom design system based on Bootstrap to create an aesthetically pleasing corporate website."
+  },
+  {
+    "name": "144",
+    "category": "MARKETING AGENCY",
+    "img": "/144.jpg",
+    "url": "https://144.hr",
+    "description": "The challenge was to redesign their website to better showcase their work and services. Our solution was to use Nuxt on the frontend toghther with markdown. Key differentiation was using canvas shader animation."
+  },
+  {
+    "name": "Jašaragić, Mamut and Stojan",
+    "category": "LAW FIRM",
+    "img": "/jms.jpg",
+    "url": "https://jms.hr"
+  },
+  {
+    "name": "Tire Calligraphy",
+    "category": "LIFESTYLE BRAND",
+    "img": "/tirecalli.jpg",
+    "url": "https://tirecalli.com"
+  },
+  {
+    "name": "Kuk Sul Do",
+    "category": "MARTIAL ARTS SCHOOL",
+    "img": "/ksd.jpg",
+    "url": "https://ksdzagreb.com"
+  },
+  {
+    "name": "Tring Energetika",
+    "category": "ENERGY COMPANY",
+    "img": "/tring.jpg",
+    "url": "https://tring-energetika.hr"
+  },
+  {
+    "name": "Rigeta",
+    "category": "MEAT PRODUCTION COMPANY",
+    "img": "/rigeta.jpg",
+    "url": "https://rigeta.hr"
+  },
+  {
+    "name": "Župić i partneri",
+    "category": "LAW FIRM",
+    "img": "/zupicpartneri.jpg",
+    "url": "https://zupicipartneri.hr"
+  }
+]

@@ -3,63 +3,7 @@ import { motion, useScroll } from "framer-motion";
 import Image from "next/image";
 import Hero from "../components/Hero";
 import { Space_Mono } from "next/font/google";
-
-const prtfolioDb = [
-  {
-    name: "Croatian Screenwriters & Playwrights Guild",
-    category: "ARTISTS GUILD",
-    img: "/spid.jpg",
-    url: "https://spid.com.hr",
-  },
-  {
-    name: "Infodesign",
-    category: "SOFTWARE COMPANY",
-    img: "/infodesign.jpg",
-    url: "https://infodesign.hr",
-  },
-  {
-    name: "144",
-    category: "MARKETING AGENCY",
-    img: "/144.jpg",
-    url: "https://144.hr",
-  },
-  {
-    name: "Jašaragić, Mamut and Stojan",
-    category: "LAW FIRM",
-    img: "/jms.jpg",
-    url: "https://jms.hr",
-  },
-  {
-    name: "Tire Calligraphy",
-    category: "LIFESTYLE BRAND",
-    img: "/tirecalli.jpg",
-    url: "https://tirecalli.com",
-  },
-  {
-    name: "Kuk Sul Do",
-    category: "MARTIAL ARTS SCHOOL",
-    img: "/ksd.jpg",
-    url: "https://ksdzagreb.com",
-  },
-  {
-    name: "Tring Energetika",
-    category: "ENERGY COMPANY",
-    img: "/tring.jpg",
-    url: "https://tring-energetika.hr",
-  },
-  {
-    name: "Rigeta",
-    category: "MEAT PRODUCTION COMPANY",
-    img: "/rigeta.jpg",
-    url: "https://rigeta.hr",
-  },
-  {
-    name: "Župić i partneri",
-    category: "LAW FIRM",
-    img: "/zupicpartneri.jpg",
-    url: "https://zupicipartneri.hr",
-  },
-];
+import portfolio from "../data/db.json";
 
 const content = (isFirstMount) => ({
   animate: {
@@ -141,7 +85,7 @@ export default function IndexPage({ isFirstMount }) {
         >
           <div className="container px-5 pt-12 mx-auto">
             <div className="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
-              {prtfolioDb.map((item, index) => {
+              {portfolio.map((item, index) => {
                 if (index % 2 !== 0) {
                   return <OddItem key={index} {...item} />;
                 }
@@ -155,7 +99,7 @@ export default function IndexPage({ isFirstMount }) {
   );
 }
 
-const OddItem = ({ img, category, name, url }) => (
+const OddItem = ({ img, category, name, url, description }) => (
   <div className="flex flex-col mb-8 sm:flex-row py-10">
     <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12">
       <a
@@ -176,15 +120,16 @@ const OddItem = ({ img, category, name, url }) => (
         {category}
       </h3>
       <h2
-        className={`mt-2 text-2xl sm:text-left md:text-4xl ${spaceMono400.className}`}
+        className={`mb-6 text-2xl sm:text-left md:text-4xl ${spaceMono400.className}`}
       >
         {name}
       </h2>
+      <p className="mt-6 sm:text-left lg:text-lg text-stone-400">{description}</p>
     </div>
   </div>
 );
 
-const EvenItem = ({ img, category, name, url }) => (
+const EvenItem = ({ img, category, name, url, description }) => (
   <div className="flex flex-col mb-8 sm:flex-row py-10">
     <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
       <a
@@ -205,10 +150,11 @@ const EvenItem = ({ img, category, name, url }) => (
         {category}
       </h3>
       <h2
-        className={`mt-2 text-2xl text-right md:text-4xl ${spaceMono400.className}`}
+        className={`mb-6 text-2xl text-right md:text-4xl ${spaceMono400.className}`}
       >
         {name}
       </h2>
+      <p className="mt-6 lg:text-lg text-right text-stone-400">{description}</p>
     </div>
   </div>
 );
