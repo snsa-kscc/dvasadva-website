@@ -124,7 +124,7 @@ const OddItem = ({ img, category, name, url, description }) => (
       >
         {name}
       </h2>
-      <p className="mt-6 sm:text-left lg:text-lg text-stone-400">{description}</p>
+      <p className="mt-6 sm:text-left text-sm lg:text-base text-stone-400">{description}</p>
     </div>
   </div>
 );
@@ -154,7 +154,7 @@ const EvenItem = ({ img, category, name, url, description }) => (
       >
         {name}
       </h2>
-      <p className="mt-6 lg:text-lg text-right text-stone-400">{description}</p>
+      <p className="mt-6 text-sm lg:text-base text-right text-stone-400">{description}</p>
     </div>
   </div>
 );

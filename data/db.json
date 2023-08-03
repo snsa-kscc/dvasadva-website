@@ -24,36 +24,42 @@
     "name": "Jašaragić, Mamut and Stojan",
     "category": "LAW FIRM",
     "img": "/jms.jpg",
-    "url": "https://jms.hr"
+    "url": "https://jms.hr",
+    "description": "The challenge was to create a modern and professional website for the law firm. Our solution was to use WordPress as the CMS with a custom theme built from scratch. The design focused on cleanliness, simplicity and trustworthiness."
   },
   {
     "name": "Tire Calligraphy",
     "category": "LIFESTYLE BRAND",
     "img": "/tirecalli.jpg",
-    "url": "https://tirecalli.com"
+    "url": "https://tirecalli.com",
+    "description": "The challenge was to create an online presence for the fashion brand. Our solution was to use a static website with a focus on showcasing the beautiful garments. The design had a minimalist aesthetic to match the brand. As the complexity grew, we opted for Astro framework enabling us to inject React where needed."
   },
   {
     "name": "Kuk Sul Do",
     "category": "MARTIAL ARTS SCHOOL",
     "img": "/ksd.jpg",
-    "url": "https://ksdzagreb.com"
+    "url": "https://ksdzagreb.com",
+    "description": "The challenge was to create a website for the martial arts school that would attract new students. Our solution was to use a simple HTML/CSS/JS static website. The design focused on showcasing the benefits of martial arts practice for both physical and mental health."
   },
   {
     "name": "Tring Energetika",
     "category": "ENERGY COMPANY",
     "img": "/tring.jpg",
-    "url": "https://tring-energetika.hr"
+    "url": "https://tring-energetika.hr",
+    "description": "The challenge was to create a B2B website for an energy company. Our solution was to build a classic one pager using WordPress as the CMS in combination with Elementor for rapid page building. The design focused on simplicity and professionalism to convey credibility."
   },
   {
     "name": "Rigeta",
     "category": "MEAT PRODUCTION COMPANY",
     "img": "/rigeta.jpg",
-    "url": "https://rigeta.hr"
+    "url": "https://rigeta.hr",
+    "description": "The challenge was to create an online presence for a meat production company. Our solution was to build a WordPress website with a custom theme built from scratch. The design focused on showcasing the high-quality products and modern production methods."
   },
   {
     "name": "Župić i partneri",
     "category": "LAW FIRM",
     "img": "/zupicpartneri.jpg",
-    "url": "https://zupicipartneri.hr"
+    "url": "https://zupicipartneri.hr",
+    "description": "The challenge was to create a representable website for the law firm. Our solution was to use WordPress as the CMS and customize a given theme. The design embodies a sense of purity, minimalism, and reliability in order to communicate the firm's expertise and professionalism."
   }
 ]
