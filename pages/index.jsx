@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import { Space_Mono } from "next/font/google";
 import portfolio from "../data/db.json";
 import Clients from "../components/Clients";
+import Contact from "../components/Contact";
 
 const content = (isFirstMount) => ({
   animate: {
@@ -46,7 +47,7 @@ const spaceMono400 = Space_Mono({
   weight: "400",
 });
 
-export default function IndexPage({ isFirstMount }) {
+const IndexPage = ({ isFirstMount }) => {
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -85,7 +86,7 @@ export default function IndexPage({ isFirstMount }) {
         </motion.h1>
         <motion.section
           variants={items}
-          className="bg-stone-900 text-zinc-100 body-font"
+          className="bg-stone-900 text-zinc-100 py-10 lg:py-20"
         >
           <div className="container px-5 pt-12 mx-auto">
             <div className="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
@@ -99,6 +100,7 @@ export default function IndexPage({ isFirstMount }) {
           </div>
         </motion.section>
       </motion.div>
+      <Contact />
     </motion.section>
   );
 }
@@ -247,3 +249,5 @@ const InitialTransition = () => {
     </motion.div>
   );
 };
+
+export default IndexPage
