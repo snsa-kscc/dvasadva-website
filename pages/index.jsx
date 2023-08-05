@@ -4,6 +4,7 @@ import Image from "next/image";
 import Hero from "../components/Hero";
 import { Space_Mono } from "next/font/google";
 import portfolio from "../data/db.json";
+import Clients from "../components/Clients";
 
 const content = (isFirstMount) => ({
   animate: {
@@ -63,7 +64,7 @@ export default function IndexPage({ isFirstMount }) {
         initial="initial"
         animate="animate"
         variants={content(isFirstMount)}
-        className="space-y-12 bg-stone-800 text-zinc-50"
+        className="bg-stone-800 text-zinc-50"
       >
         <motion.h1
           variants={title}
@@ -71,6 +72,9 @@ export default function IndexPage({ isFirstMount }) {
         >
           We craft custom made software that engages
         </motion.h1>
+        <h1 className={`w-full text-2xl sm:text-3xl lg:text-5xl text-stone-300 mt-8 lg:mt-36 px-8 lg:px-24 ${spaceMono400.className}`}>Our clients</h1>
+        <Clients baseVelocity={-1} margin="mt-12 lg:mt-24">Jump2Sport.hr TripleJump d.o.o. JMS d.o.o. Infodesign d.o.o. Tire Calligraphy SPID</Clients>
+        <Clients baseVelocity={1} margin="mb-12 lg:mb-24">144 Kuk Sul Do Zagreb Tring Energetika d.o.o. Rigeta d.o.o. Župić&partneri d.o.o.</Clients>
         <motion.h1
           variants={title}
           ref={ref}
