@@ -65,4 +65,4 @@ const Footer = () => (
   </footer>
 );
 
-export default Layout;
+export default Layout

@@ -85,8 +85,6 @@ void main() {
 
     vec2 noiseCoord = uv*vec2(3., 4.);
 
-    //float tilt = -0.1 * uv.y;
-
     float incline = uv.x * 0.1;
 
     float offset = incline * mix(-.25, 0.25, uv.y);

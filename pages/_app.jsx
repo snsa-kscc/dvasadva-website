@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
 
-function MyApp({ Component, pageProps, router }) {
+const App = ({ Component, pageProps, router }) => {
   const [isFirstMount, setIsFirstMount] = useState(true);
 
   useEffect(() => {
@@ -27,4 +27,4 @@ function MyApp({ Component, pageProps, router }) {
   );
 }
 
-export default MyApp;
+export default App
