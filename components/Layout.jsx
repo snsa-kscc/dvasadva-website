@@ -42,11 +42,10 @@ const Footer = () => (
   <footer className="bg-stone-800 body-font">
     <div className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
       <div className="flex-shrink-0 w-64 mx-auto mt-10 text-center md:mx-0 md:text-left md:mt-0">
-        <a className="flex items-center justify-center font-medium text-zinc-50 title-font md:justify-start">
+        <div className="flex items-center justify-center font-medium text-zinc-50 title-font md:justify-start">
           <Image alt="dvasadva d.o.o." src="/2s2.png" width={88} height={50} />
           <span className="ml-3 text-xl">dvasadva d.o.o.</span>
-        </a>
-        <p className="mt-2 text-sm text-zinc-500">Full stack agency which harnesses power of deep neural networks and LLMs.</p>
+        </div>
       </div>
     </div>
     <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-zinc-50">
