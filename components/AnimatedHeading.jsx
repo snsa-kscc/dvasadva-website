@@ -16,13 +16,13 @@ const AnimatedHeading = ({ text, className }) => {
   });
 
   return (
-    <motion.h1
+    <motion.h2
       ref={ref}
       style={{ opacity: scrollYProgress }}
       className={`${spaceMono400.className} ${className}`}
     >
       {text}
-    </motion.h1>
+    </motion.h2>
   );
 };
 export default AnimatedHeading
