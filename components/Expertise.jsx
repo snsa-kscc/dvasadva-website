@@ -27,11 +27,11 @@ const Expertise = () => {
     <div className="min-h-[80vh] xl:min-h-[70vh] flex flex-wrap justify-start gap-16 p-8 lg:p-24">
       <Card
         heading="Web Application Development"
-        description="Harnessing the power of cutting-edge technology we specialize in building scalable, secure and performant web applications using Next.js and TypeScript."
+        description="Harnessing the power of cutting-edge technology, we specialize in building scalable, secure and performant web applications using Next.js and TypeScript."
         color="bg-gradient-to-r from-cyan-500 to-blue-500"
       />
       <Card
-        heading="Large Language Model Inference and Deployment"
+        heading="Large Language Model Inference & Deployment"
         description="We deploy powerful language models such as LLaMa and Falcon using Hugging Face and LangChain for seamless and efficient AI-driven solutions."
         color="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
       />
