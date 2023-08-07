@@ -32,7 +32,7 @@ const Expertise = () => {
       />
       <Card
         heading="Large Language Model Inference & Deployment"
-        description="We deploy powerful language models such as LLaMa and Falcon using Hugging Face and LangChain for seamless and efficient AI-driven solutions."
+        description="We deploy powerful language models such as LLaMA and Falcon using Hugging Face and LangChain for seamless and efficient AI-driven solutions."
         color="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
       />
       <Card
