@@ -1,18 +1,21 @@
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
+import { ReactLenis } from "@studio-freight/react-lenis";
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Head>
-        <title>dvasadva</title>
-      </Head>
-      <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-zinc-50 h-10"></div>
-      <Header />
-      <main className="flex-1 bg-stone-800">{children}</main>
-      <Footer />
-    </div>
+    <ReactLenis root>
+      <div className="flex flex-col min-h-screen" >
+        <Head>
+          <title>dvasadva</title>
+        </Head>
+        <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-zinc-50 h-10"></div>
+        <Header />
+        <main className="flex-1 bg-stone-800">{children}</main>
+        <Footer />
+      </div >
+    </ReactLenis>
   );
 };
 
