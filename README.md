@@ -1,6 +1,6 @@
 # dvasadva
 
-Website for dvasadva motion graphics agency in Varazdin, Croatia
+Website for dvasadva motion graphics agency in Varazdin, Croatia.
 
 ![dvasadva](https://github.com/snsa-kscc/dvasadva-website/assets/51080349/dc924711-b532-4c08-bc89-bec783592d64)
 
