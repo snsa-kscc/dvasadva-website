@@ -53,7 +53,7 @@ const Footer = () => (
     </div>
     <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-zinc-50">
       <div className="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row">
-        <p className="text-sm text-center text-zinc-50 sm:text-left">© 2023 dvasadva d.o.o.</p>
+        <p className="text-sm text-center text-zinc-50 sm:text-left">© 2024 dvasadva d.o.o.</p>
         <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
           <a href="https://linkedin.com/company/dvasadva" className="ml-3 text-zinc-50">
             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0" className="w-5 h-5" viewBox="0 0 24 24">
