@@ -9,6 +9,7 @@ const Layout = ({ children }) => {
       <div className="flex flex-col min-h-screen" >
         <Head>
           <title>dvasadva</title>
+          <meta name="description" content="Truth can only be found in one place: the code." />
         </Head>
         <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-zinc-50 h-10"></div>
         <Header />
