@@ -10,6 +10,7 @@ const Layout = ({ children }) => {
         <Head>
           <title>dvasadva</title>
           <meta name="description" content="Truth can only be found in one place: the code." />
+          <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         </Head>
         <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-zinc-50 h-10"></div>
         <Header />
