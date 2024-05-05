@@ -46,10 +46,16 @@ const Header = () => {
 const Footer = () => (
   <footer className="bg-stone-800 body-font">
     <div className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
-      <div className="flex-shrink-0 w-64 mx-auto mt-10 text-center md:mx-0 md:text-left md:mt-0">
-        <div className="flex items-center justify-center font-medium text-zinc-50 title-font md:justify-start">
+      <div className="flex-shrink-0 mx-auto mt-10 md:mx-0 md:text-left md:mt-0">
+        <div className="font-medium text-zinc-50">
           <Image alt="dvasadva d.o.o." src="/2s2.png" width={88} height={50} />
-          <span className="ml-3 text-xl">dvasadva d.o.o.</span>
+          <p className="text-xl">dvasadva d.o.o. <span className="text-xs">for services</span></p>
+          <p className="text-xs">Zagrebačka 15, Varaždin, Croatia</p>
+          <p className="text-xs">Reg: Commercial Court, Varaždin; No: 070142589</p>
+          <p className="text-xs">IBAN: LT113250074366059059, Revolut Bank UAB,</p>
+          <p className="text-xs">Konstitucijos ave. 21B, 08130, Vilnius, Lithuania</p>
+          <p className="text-xs">Base capital: 2,654.46 eur, fully paid</p>
+          <p className="text-xs">Board member: Siniša Košćec</p>
         </div>
       </div>
     </div>
