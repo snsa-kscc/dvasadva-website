@@ -52,8 +52,8 @@ const Footer = () => (
           <p className="text-xl">dvasadva d.o.o. <span className="text-xs">for services</span></p>
           <p className="text-xs">Zagrebačka 15, Varaždin, Croatia</p>
           <p className="text-xs">Reg: Commercial Court, Varaždin; No: 070142589</p>
-          <p className="text-xs">IBAN: LT113250074366059059, Revolut Bank UAB,</p>
-          <p className="text-xs">Konstitucijos ave. 21B, 08130, Vilnius, Lithuania</p>
+          <p className="text-xs">IBAN: HR3524840081135414789, Raiffeisenbank Austria d.d.,</p>
+          <p className="text-xs">Magazinska cesta 69, Zagreb, Croatia</p>
           <p className="text-xs">Base capital: 2,654.46 eur, fully paid</p>
           <p className="text-xs">Board member: Siniša Košćec</p>
         </div>
