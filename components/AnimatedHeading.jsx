@@ -5,6 +5,7 @@ import { Space_Mono } from "next/font/google";
 const spaceMono400 = Space_Mono({
   subsets: ["latin"],
   weight: "400",
+  fallback: ['monospace'],
 });
 
 const AnimatedHeading = ({ text, className }) => {
