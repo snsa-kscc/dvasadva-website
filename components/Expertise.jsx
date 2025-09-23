@@ -8,7 +8,7 @@ const spaceMono400 = Space_Mono({
 
 const Card = ({ heading, description, color }) => {
   return (
-    <div className={`basis-60 flex-grow rounded-3xl ${color}`}>
+    <div className={`basis-60 grow rounded-3xl ${color}`}>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -28,17 +28,17 @@ const Expertise = () => {
       <Card
         heading="Web Application Development"
         description="Harnessing the power of cutting-edge technology, we specialize in building scalable, secure and performant web applications using Next.js and TypeScript."
-        color="bg-gradient-to-r from-cyan-500 to-blue-500"
+        color="bg-linear-to-r from-cyan-500 to-blue-500"
       />
       <Card
         heading="Large Language Model Inference & Deployment"
         description="We deploy powerful language models such as Mistral or LLaMA using Hugging Face and LangChain for seamless and efficient AI-driven solutions. We also use proprietary models from OpenAI and Antrhopic for advanced tasks."
-        color="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+        color="bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500"
       />
       <Card
         heading="API Integrations & Data Driven Solutions"
         description="We enable interchange between different APIs and data sources to build data driven solutions using technologies like GraphQL, REST APIs and serverless functions."
-        color="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
+        color="bg-linear-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
       />
     </div>
   );

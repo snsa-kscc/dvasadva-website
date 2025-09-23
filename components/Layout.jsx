@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-import { ReactLenis } from "@studio-freight/react-lenis";
+import { ReactLenis } from 'lenis/react';
 
 const Layout = ({ children }) => {
   return (
@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
           <meta name="description" content="Truth can only be found in one place: the code." />
           <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         </Head>
-        <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-zinc-50 h-10"></div>
+        <div className="bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 text-zinc-50 h-10"></div>
         <Header />
         <main className="flex-1 bg-stone-800">{children}</main>
         <Footer />
@@ -33,7 +33,7 @@ const Header = () => {
         </Link>
         <nav className="flex flex-wrap items-center justify-center space-x-4 text-base md:ml-auto">
           <Link href="/about" legacyBehavior>
-            <button type="button" className="rounded bg-gradient-to-r from-green-400 to-blue-500 hover:-translate-y-1 hover:scale-110 p-4 transition-all ease-in-out duration-300">
+            <button type="button" className="rounded bg-linear-to-r from-green-400 to-blue-500 hover:-translate-y-1 hover:scale-110 p-4 transition-all ease-in-out duration-300">
               About Us
             </button>
           </Link>
@@ -46,7 +46,7 @@ const Header = () => {
 const Footer = () => (
   <footer className="bg-stone-800 body-font">
     <div className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
-      <div className="flex-shrink-0 mx-auto mt-10 md:mx-0 md:text-left md:mt-0">
+      <div className="shrink-0 mx-auto mt-10 md:mx-0 md:text-left md:mt-0">
         <div className="font-medium text-zinc-50">
           <Image alt="dvasadva d.o.o." src="/2s2.png" width={88} height={50} />
           <p className="text-xl">dvasadva d.o.o. <span className="text-xs">for services</span></p>
@@ -59,7 +59,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-zinc-50">
+    <div className="bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 text-zinc-50">
       <div className="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row">
         <p className="text-sm text-center text-zinc-50 sm:text-left">© 2025 dvasadva d.o.o.</p>
         <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">

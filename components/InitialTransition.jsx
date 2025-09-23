@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { useLenis } from '@studio-freight/react-lenis'
+import { useLenis } from 'lenis/react'
 
 const blackBox = {
   initial: {

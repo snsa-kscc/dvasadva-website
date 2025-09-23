@@ -11,7 +11,7 @@ export const OddItem = ({ img, category, name, url, description }) => (
     <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12">
       <a
         href={url}
-        className="relative block overflow-hidden rounded shadow-slate-700 shadow-lg h-auto w-full"
+        className="relative block overflow-hidden rounded-sm shadow-slate-700 shadow-lg h-auto w-full"
       >
         <Image
           alt="item"
@@ -41,7 +41,7 @@ export const EvenItem = ({ img, category, name, url, description }) => (
     <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
       <a
         href={url}
-        className="relative block overflow-hidden rounded shadow-slate-700 shadow-lg h-auto w-full"
+        className="relative block overflow-hidden rounded-sm shadow-slate-700 shadow-lg h-auto w-full"
       >
         <Image
           alt="item"

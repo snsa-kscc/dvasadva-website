@@ -18,7 +18,7 @@ const App = ({ Component, pageProps }) => {
     return () => {
       router.events.off("routeChangeStart", handleRouteChange);
     };
-  }, []);
+  }, [isFirstMount, router.events]);
 
   return (
     <Layout>
