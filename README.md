@@ -2,11 +2,11 @@
 
 Website for dvasadva motion graphics agency in Varazdin, Croatia.
 
-![dvasadva](https://github.com/snsa-kscc/dvasadva-website/assets/51080349/dc924711-b532-4c08-bc89-bec783592d64)
+![dvasadva](https://github.com/user-attachments/assets/f668fd37-a679-48ca-8f91-01fb8920c86d)
 
 ## Tech Stack
 
-- Next.js
+- TanStack Start
 - React Three Fiber
 - Framer Motion
 - Tailwind CSS
