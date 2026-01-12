@@ -1,28 +1,29 @@
-import { motion } from "framer-motion";
-import { Space_Mono } from "next/font/google";
+import { motion } from 'framer-motion'
 
-const spaceMono400 = Space_Mono({
-  subsets: ["latin"],
-  weight: "400",
-});
+interface CardProps {
+  heading: string
+  description: string
+  color: string
+}
 
-const Card = ({ heading, description, color }) => {
+function Card({ heading, description, color }: CardProps) {
   return (
     <div className={`basis-60 grow rounded-3xl ${color}`}>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        viewport={{ once: true, margin: "0px 0px -30% 0px" }}
-        className="flex flex-col justify-between items-center gap-8 p-8 h-full">
-        <h3 className={`text-2xl text-right md:text-4xl ${spaceMono400.className}`}>{heading}</h3>
+        viewport={{ once: true, margin: '0px 0px -30% 0px' }}
+        className="flex flex-col justify-between items-center gap-8 p-8 h-full"
+      >
+        <h3 className="text-2xl text-right md:text-4xl font-space-mono">{heading}</h3>
         <p className="text-sm lg:text-base text-stone-100">{description}</p>
       </motion.div>
     </div>
   )
 }
 
-const Expertise = () => {
+export default function Expertise() {
   return (
     <div className="min-h-[80vh] xl:min-h-[70vh] flex flex-wrap justify-start gap-16 p-8 lg:p-24">
       <Card
@@ -41,7 +42,5 @@ const Expertise = () => {
         color="bg-linear-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
       />
     </div>
-  );
-};
-
-export default Expertise
+  )
+}

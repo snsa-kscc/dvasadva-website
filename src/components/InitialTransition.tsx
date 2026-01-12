@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { useLenis } from 'lenis/react'
+import { useLenis } from "lenis/react";
 
 const blackBox = {
   initial: {
@@ -15,7 +15,7 @@ const blackBox = {
       ease: [0.87, 0, 0.13, 1],
     },
   },
-};
+} as const;
 
 const textContainer = {
   initial: {
@@ -28,7 +28,7 @@ const textContainer = {
       when: "afterChildren",
     },
   },
-};
+} as const;
 
 const text = {
   initial: {
@@ -41,12 +41,11 @@ const text = {
       ease: [0.87, 0, 0.13, 1],
     },
   },
-};
+} as const;
 
-const InitialTransition = () => {
-
+export default function InitialTransition() {
   const [lenisReady, setLenisReady] = useState(false);
-  const lenis = useLenis()
+  const lenis = useLenis();
 
   useEffect(() => {
     typeof window !== "undefined" && window.scrollTo(0, 0);
@@ -61,16 +60,22 @@ const InitialTransition = () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-black z-50 ${lenisReady ? "hidden" : "block"}`}
+        className={`fixed top-0 left-0 w-full h-full bg-black z-50 ${
+          lenisReady ? "hidden" : "block"
+        }`}
       />
       {lenisReady && (
-        < motion.div
+        <motion.div
           className="absolute z-50 flex items-center justify-center w-full bg-black"
           initial="initial"
           animate="animate"
           variants={blackBox}
-          onAnimationStart={() => { lenis.stop(); }}
-          onAnimationComplete={() => { lenis.start(); }}
+          onAnimationStart={() => {
+            lenis?.stop();
+          }}
+          onAnimationComplete={() => {
+            lenis?.start();
+          }}
         >
           <motion.svg variants={textContainer} className="absolute z-50 flex">
             <pattern
@@ -96,10 +101,8 @@ const InitialTransition = () => {
               dvasadva
             </text>
           </motion.svg>
-        </motion.div >
+        </motion.div>
       )}
     </>
   );
-};
-
-export default InitialTransition
+}
