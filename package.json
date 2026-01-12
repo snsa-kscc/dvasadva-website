@@ -23,6 +23,7 @@
     "three": "^0.182.0"
   },
   "devDependencies": {
+    "@netlify/vite-plugin-tanstack-start": "^1.2.6",
     "@tailwindcss/postcss": "^4.1.18",
     "@tailwindcss/vite": "^4.1.18",
     "@tanstack/devtools-vite": "^0.4.1",
