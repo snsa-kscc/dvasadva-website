@@ -4,7 +4,7 @@
     "category": "FOODTECH PLATFORM",
     "img": "/juicefast.jpg",
     "url": "https://juicefast.com",
-    "description": "The challenge was to build a macro nutrients logging app with AI-powered food recognition. Our solution was to use Expo for cross-platform development, Convex for real-time database synchronization, and Vercel's AI SDK to extract macronutrients from food photos. The app also features healthy recipes and mind & exercise videos."
+    "description": "The challenge was to build a macronutrients logging app with AI-powered food recognition. Our solution was to use Expo for cross-platform development, Convex for real-time database synchronization, and Vercel's AI SDK to extract macronutrients from food photos. The app also features healthy recipes and mind & exercise videos."
   },
   {
     "name": "EdureteAI",

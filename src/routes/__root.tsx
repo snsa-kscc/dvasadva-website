@@ -71,7 +71,7 @@ function RootComponent() {
         <FirstMountContext.Provider value={{ isFirstMount }}>
           <ReactLenis root>
             <div className="flex flex-col min-h-screen">
-              <div className="bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 text-zinc-50 h-10"></div>
+              <div className="bg-linear-to-r from-orange-500 via-red-500 to-pink-500 text-zinc-50 h-10"></div>
               <Header />
               <main className="flex-1 bg-stone-800">
                 <AnimatePresence>
@@ -147,7 +147,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 text-zinc-50">
+      <div className="bg-linear-to-r from-orange-500 via-red-500 to-pink-500 text-zinc-50">
         <div className="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row">
           <p className="text-sm text-center text-zinc-50 sm:text-left">
             © 2026 dvasadva d.o.o.
