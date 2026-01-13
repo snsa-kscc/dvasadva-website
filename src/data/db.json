@@ -1,5 +1,26 @@
 [
   {
+    "name": "Juicefast",
+    "category": "FOODTECH PLATFORM",
+    "img": "/juicefast.jpg",
+    "url": "https://juicefast.com",
+    "description": "The challenge was to build a macro nutrients logging app with AI-powered food recognition. Our solution was to use Expo for cross-platform development, Convex for real-time database synchronization, and Vercel's AI SDK to extract macronutrients from food photos. The app also features healthy recipes and mind & exercise videos."
+  },
+  {
+    "name": "EdureteAI",
+    "category": "EDTECH PLATFORM",
+    "img": "/edurete.jpg",
+    "url": "https://ai.edurete.com",
+    "description": "The challenge was to create a chatbot arena-style platform for comparing multiple LLMs to facilitate math and science education. Our solution was to use Next.js with Vercel's AI SDK to leverage various language models. App is hosted on Vercel for seamless deployment and scalability."
+  },
+  {
+    "name": "Smartell",
+    "category": "MEDIA COMPANY",
+    "img": "/smartell.jpg",
+    "url": "https://smartell.tv",
+    "description": "The challenge was to build a dynamic and engaging media website. Our solution was to use Next.js with Payload CMS for flexible content management. Smooth, captivating animations were crafted using GSAP to enhance the user experience."
+  },
+  {
     "name": "Croatian Screenwriters & Playwrights Guild",
     "category": "ARTISTS GUILD",
     "img": "/spid.jpg",

@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 interface CardProps {
-  heading: string
-  description: string
-  color: string
+  heading: string;
+  description: string;
+  color: string;
 }
 
 function Card({ heading, description, color }: CardProps) {
@@ -13,22 +13,24 @@ function Card({ heading, description, color }: CardProps) {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        viewport={{ once: true, margin: '0px 0px -30% 0px' }}
+        viewport={{ once: true, margin: "0px 0px -30% 0px" }}
         className="flex flex-col justify-between items-center gap-8 p-8 h-full"
       >
-        <h3 className="text-2xl text-right md:text-4xl font-space-mono">{heading}</h3>
+        <h3 className="text-2xl text-right md:text-4xl font-space-mono">
+          {heading}
+        </h3>
         <p className="text-sm lg:text-base text-stone-100">{description}</p>
       </motion.div>
     </div>
-  )
+  );
 }
 
 export default function Expertise() {
   return (
     <div className="min-h-[80vh] xl:min-h-[70vh] flex flex-wrap justify-start gap-16 p-8 lg:p-24">
       <Card
-        heading="Web Application Development"
-        description="Harnessing the power of cutting-edge technology, we specialize in building scalable, secure and performant web applications using Next.js and TypeScript."
+        heading="Web and Mobile Application Development"
+        description="Harnessing the power of cutting-edge technology, we specialize in building scalable, secure and performant web applications using Next.js, Expo and TypeScript."
         color="bg-linear-to-r from-cyan-500 to-blue-500"
       />
       <Card
@@ -42,5 +44,5 @@ export default function Expertise() {
         color="bg-linear-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
       />
     </div>
-  )
+  );
 }

@@ -76,11 +76,11 @@ function IndexPage() {
         />
         <Clients baseVelocity={-1} margin="mt-12 lg:mt-24">
           Jump2Sport.hr TripleJump d.o.o. JMS d.o.o. Infodesign d.o.o. Tire
-          Calligraphy SPID
+          Calligraphy SPID Dvigrad Telekom d.o.o.
         </Clients>
         <Clients baseVelocity={1} margin="mb-12 lg:mb-24">
-          Goridar Grupa d.o.o. 144 Kuk Sul Do Zagreb Tring Energetika d.o.o.
-          Rigeta d.o.o. Župić&partneri d.o.o.
+          Juicefast d.o.o. 144 Kuk Sul Do Zagreb Tring Energetika d.o.o. Rigeta
+          d.o.o. Župić&partneri d.o.o. Edurete
         </Clients>
         <AnimatedHeading
           className="w-full text-3xl text-right lg:text-5xl p-8 lg:p-24"
