@@ -34,13 +34,13 @@ export default function Expertise() {
         color="bg-linear-to-r from-cyan-500 to-blue-500"
       />
       <Card
-        heading="Large Language Model Inference & Deployment"
-        description="We deploy powerful language models such as Mistral or LLaMA using Hugging Face and LangChain for seamless and efficient AI-driven solutions. We also use proprietary models from OpenAI and Antrhopic for advanced tasks."
+        heading="Large Language Models & Agentic Automation"
+        description="We leverage language models to build intelligent agentic systems. We create automated workflows using n8n for end-to-end AI-driven solutions that think, reason, and act autonomously."
         color="bg-linear-to-r from-yellow-400 to-green-500"
       />
       <Card
         heading="API Integrations & Data Driven Solutions"
-        description="We enable interchange between different APIs and data sources to build data driven solutions using technologies like GraphQL, REST APIs and serverless functions."
+        description="We enable interchange between different APIs and data sources to build data driven solutions using technologies like REST APIs and serverless functions."
         color="bg-linear-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
       />
     </div>
