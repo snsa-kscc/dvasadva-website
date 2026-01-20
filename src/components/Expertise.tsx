@@ -35,7 +35,7 @@ export default function Expertise() {
       />
       <Card
         heading="Large Language Models & Agentic Automation"
-        description="We leverage language models to build intelligent agentic systems. We create automated workflows using n8n for end-to-end AI-driven solutions that think, reason, and act autonomously."
+        description="We leverage language models to build agentic systems. We create automated workflows using n8n for end-to-end AI-driven solutions that reason and act autonomously."
         color="bg-linear-to-r from-yellow-400 to-green-500"
       />
       <Card
